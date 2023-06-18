@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   color: #E4E2EA;
+  font-family: "Work Sans", sans-serif;
 }
 
 .main {
@@ -36,9 +37,19 @@
 .main .hero .navbar ul li {
   list-style: none;
   display: flex;
+  margin-right: 60px;
 }
 .main .hero .navbar ul li a {
   text-decoration: none;
+  font-weight: 200;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #E4E2EA;
+  transition: all ease-in 300ms;
+}
+.main .hero .navbar ul li a:hover {
+  color: #FF8D05;
 }
 .main .about {
   width: 100%;
