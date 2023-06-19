@@ -51,9 +51,107 @@
 .main .hero .navbar ul li a:hover {
   color: #FF8D05;
 }
+.main .hero .hero-content {
+  display: grid;
+  width: 450px;
+  height: 500px;
+  position: relative;
+  row-gap: 50px;
+}
+.main .hero .hero-content h1 {
+  font-size: 56px;
+  font-style: italic;
+  position: absolute;
+  top: 60px;
+}
+.main .hero .hero-content p {
+  position: absolute;
+  top: 200px;
+  font-weight: 300;
+  width: 400px;
+  line-height: 30px;
+  font-size: 18px;
+  margin: 30px 0px;
+}
+.main .hero .hero-content .cta {
+  position: absolute;
+  top: 350px;
+  width: 100px;
+  background-color: #FF8D05;
+  color: #E4E2EA;
+  border: none;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 15px 45px;
+  width: 242px;
+  height: 64px;
+}
+.main .hero .hero-content .cta a {
+  text-decoration: none;
+}
 .main .about {
   width: 100%;
   height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.main .about .about-left img {
+  height: 504px;
+  width: 495px;
+}
+.main .about .about-right {
+  display: flex;
+  flex-direction: column;
+  padding-right: 150px;
+  row-gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.main .about .about-right h2 {
+  color: #A8670E;
+  font-size: 48px;
+  letter-spacing: 7px;
+}
+.main .about .about-right .about-content {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+}
+.main .about .about-right .about-facts {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  align-items: center;
+  width: 100%;
+}
+.main .about .about-right .about-facts .fact {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+.main .about .about-right .about-facts .fact .about-icons {
+  width: 72px;
+  height: 72px;
+  border-radius: 50px;
+  background: #FF8D05;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.main .about .about-right .about-facts .fact .title {
+  color: #A8670E;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+.main .about .about-right .about-facts .fact .text {
+  font-weight: 300;
+  font-size: 14px;
 }
 .main .products {
   width: 100%;

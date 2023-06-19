@@ -5,3 +5,15 @@ $fontColor: #E4E2EA;
 
 $primaryfont: 'Work Sans', sans-serif;
 
+
+@mixin primary-btn{
+    background-color: $accentColor;
+    color: $fontColor;
+    border: none;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 15px 45px;
+    width: 242px;
+    height: 64px;
+}
+
