@@ -4,6 +4,7 @@
   box-sizing: border-box;
   color: #E4E2EA;
   font-family: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .main {
