@@ -15,5 +15,10 @@ $primaryfont: 'Work Sans', sans-serif;
     padding: 15px 45px;
     width: 242px;
     height: 64px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $secondaryColor;
+    }
 }
 

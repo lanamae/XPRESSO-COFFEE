@@ -15,7 +15,7 @@
 .main .hero {
   width: 100%;
   height: 100vh;
-  padding: 20px 150px;
+  padding: 20px 120px;
   background-image: url("/Assets/bg1.png");
   background-position: right;
   background-repeat: no-repeat;
@@ -86,6 +86,10 @@
   padding: 15px 45px;
   width: 242px;
   height: 64px;
+  cursor: pointer;
+}
+.main .hero .hero-content .cta:hover {
+  background-color: #A8670E;
 }
 .main .hero .hero-content .cta a {
   text-decoration: none;
@@ -106,7 +110,7 @@
 .main .about .about-right {
   display: flex;
   flex-direction: column;
-  padding-right: 150px;
+  padding-right: 120px;
   row-gap: 60px;
   justify-content: center;
   align-items: center;
@@ -157,6 +161,58 @@
 .main .products {
   width: 100%;
   height: 100vh;
+  padding: 40px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+}
+.main .products .products-headline {
+  font-size: 48px;
+  color: #A8670E;
+}
+.main .products .product-items {
+  display: flex;
+  row-gap: 60px;
+}
+.main .products .product-items .product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+.main .products .product-items .product-card .product-name {
+  color: #A8670E;
+  font-size: 28px;
+  font-weight: 700;
+}
+.main .products .product-items .product-card .product-info {
+  padding: 0px 50px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+.main .products .product-items .product-card .view-store {
+  background-color: #FF8D05;
+  color: #E4E2EA;
+  border: none;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 15px 45px;
+  width: 242px;
+  height: 64px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 15px;
+  padding: 15px 45px;
+  width: 200px;
+  height: 54px;
+}
+.main .products .product-items .product-card .view-store:hover {
+  background-color: #A8670E;
+}
+.main .products .product-items .product-card .view-store a {
+  text-decoration: none;
 }
 .main .service {
   width: 100%;
