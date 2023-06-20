@@ -359,7 +359,83 @@
 
     .testimonials{
         width: 100%;
-        height: 100vh;
+        height: auto;
+        padding: 60px 120px;
+        background-image: url('/Assets/bg2.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        .testimonial-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 40px;
+
+
+            .testimonial-card{
+                width: 313.3px;
+                height: 373.74px;
+                background-color: $secondaryColor;
+                border-radius: 10px;
+                padding: 30px 50px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                
+                .quotation{
+                    position: absolute;
+                }
+
+                .feedback-content{
+                    margin-top: 30px;
+                    text-align: center;
+                    // position: absolute;
+                    font-size: 18px;
+                    font-weight: 280;
+                }
+
+                .customer{
+                    // position: absolute;
+                    display: grid;
+                    grid-template-columns: 50px 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    column-gap: 20px;
+
+                    .avatar{
+                        grid-column: 1/2;
+                        grid-row: 1/3;
+                    }
+
+                    .name{
+                        grid-column: 2/3;
+                        grid-row: 1/2;
+                        font-weight: 600;
+                        color: #000;
+                        font-size: 20px;
+
+                    }
+
+                    .profession{
+                        grid-column: 2/3;
+                        grid-row: 2/3;
+                        font-weight: 300;
+                        font-style: italic;
+                        color: #000;
+                        font-size: 16px;
+                    }
+
+
+
+                }
+                 
+            }
+        }
     }
 
     .contact-us{

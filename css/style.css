@@ -272,7 +272,67 @@
 }
 .main .testimonials {
   width: 100%;
-  height: 100vh;
+  height: auto;
+  padding: 60px 120px;
+  background-image: url("/Assets/bg2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .testimonials .testimonial-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+}
+.main .testimonials .testimonial-container .testimonial-card {
+  width: 313.3px;
+  height: 373.74px;
+  background-color: #A8670E;
+  border-radius: 10px;
+  padding: 30px 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main .testimonials .testimonial-container .testimonial-card .quotation {
+  position: absolute;
+}
+.main .testimonials .testimonial-container .testimonial-card .feedback-content {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 280;
+}
+.main .testimonials .testimonial-container .testimonial-card .customer {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.main .testimonials .testimonial-container .testimonial-card .customer .avatar {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.main .testimonials .testimonial-container .testimonial-card .customer .name {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-weight: 600;
+  color: #000;
+  font-size: 20px;
+}
+.main .testimonials .testimonial-container .testimonial-card .customer .profession {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-weight: 300;
+  font-style: italic;
+  color: #000;
+  font-size: 16px;
 }
 .main .contact-us {
   width: 100%;
