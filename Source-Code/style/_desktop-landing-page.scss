@@ -441,6 +441,142 @@
     .contact-us{
         width: 100%;
         height: 100vh;
+        padding: 30px 120px;
+        background-image: url('/Assets/blurry-bg.png');
+        background-position:  left;
+        background-repeat: no-repeat;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        
+
+        .contact-info{
+            grid-column: 1/2;
+
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+            padding: 100px;
+
+            h2{
+                font-size: 40px;
+                color: $accentColor;
+                letter-spacing: 2px;
+                margin-bottom: 20px;
+            }
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+
+                list-style: none; 
+                
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+                
+                li{
+                    display: flex;
+                    align-items: center;
+                    gap: 25px;    
+
+                    a{
+                        text-decoration: none;
+                        font-size: 16px;
+                        font-weight: 300;
+                        transition: all 300ms ease-in;
+
+                        &:hover{
+                            color: $secondaryColor;
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+        .contact-form{
+            grid-column: 2/3;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+            .form-container{
+                width: 434px;
+                height: 583px;
+                padding: 40px 100px;
+                border: solid 2px $accentColor;
+                border-radius: 10px;
+                
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                
+
+
+                h4{
+                    font-size: 27px;
+                    margin-bottom: 50px;
+                }
+
+                form{
+                    display: flex;
+                    flex-direction: column;
+
+                    .field{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+
+                        label{
+                            font-size: 16px;
+                            font-weight: 300;
+                        }
+
+                        input{
+                            height: 34px;
+                            background: rgba($color: #fff, $alpha: 0.2);
+                            border: none;
+                            border-bottom: solid 2px $accentColor;
+                            padding: 5px 10px;
+                            // font-size: 16px;
+                        }
+
+                        textarea{
+                        
+                            background: rgba($color: #fff, $alpha: 0.2);
+                            border: none;
+                            border-bottom: solid 2px $accentColor;
+                            padding: 5px 10px;
+                            // font-size: 16px;
+                        }
+
+                        
+
+
+                    }
+
+                    .send{
+                        @include primary-btn;
+                        height: 60px;
+                        width: 100%;
+                     }
+
+                }
+
+            }
+        }
     }
 
     .footer{

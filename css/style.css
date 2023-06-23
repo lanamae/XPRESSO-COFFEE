@@ -337,6 +337,114 @@
 .main .contact-us {
   width: 100%;
   height: 100vh;
+  padding: 30px 120px;
+  background-image: url("/Assets/blurry-bg.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main .contact-us .contact-info {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  padding: 100px;
+}
+.main .contact-us .contact-info h2 {
+  font-size: 40px;
+  color: #FF8D05;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.main .contact-us .contact-info ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  list-style: none;
+}
+.main .contact-us .contact-info ul img {
+  width: 30px;
+  height: 30px;
+}
+.main .contact-us .contact-info ul li {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.main .contact-us .contact-info ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  transition: all 300ms ease-in;
+}
+.main .contact-us .contact-info ul li a:hover {
+  color: #A8670E;
+}
+.main .contact-us .contact-form {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .contact-us .contact-form .form-container {
+  width: 434px;
+  height: 583px;
+  padding: 40px 100px;
+  border: solid 2px #FF8D05;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.main .contact-us .contact-form .form-container h4 {
+  font-size: 27px;
+  margin-bottom: 50px;
+}
+.main .contact-us .contact-form .form-container form {
+  display: flex;
+  flex-direction: column;
+}
+.main .contact-us .contact-form .form-container form .field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main .contact-us .contact-form .form-container form .field label {
+  font-size: 16px;
+  font-weight: 300;
+}
+.main .contact-us .contact-form .form-container form .field input {
+  height: 34px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-bottom: solid 2px #FF8D05;
+  padding: 5px 10px;
+}
+.main .contact-us .contact-form .form-container form .field textarea {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-bottom: solid 2px #FF8D05;
+  padding: 5px 10px;
+}
+.main .contact-us .contact-form .form-container form .send {
+  background-color: #FF8D05;
+  color: #E4E2EA;
+  border: none;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 15px 45px;
+  width: 242px;
+  height: 64px;
+  cursor: pointer;
+  height: 60px;
+  width: 100%;
+}
+.main .contact-us .contact-form .form-container form .send:hover {
+  background-color: #A8670E;
 }
 .main .footer {
   width: 100%;
