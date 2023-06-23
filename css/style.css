@@ -450,4 +450,51 @@
   width: 100%;
   height: 300px;
   background: #A8670E;
+  padding: 20px 120px;
+  display: flex;
+  gap: 100px;
+}
+.main .footer ul {
+  display: flex;
+  flex-direction: column;
+}
+.main .footer ul .logo {
+  display: flex;
+  align-items: center;
+}
+.main .footer ul .logo div .title {
+  font-size: 24px;
+  font-weight: 900;
+}
+.main .footer ul .logo div .tagline {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+}
+.main .footer :nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.main .footer :nth-child(1) :nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+.main .footer :nth-child(2) {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  font-weight: 200;
+}
+.main .footer :nth-child(3) {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  font-weight: 200;
+}
+.main .footer :nth-child(4) {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  font-weight: 200;
 }/*# sourceMappingURL=style.css.map */
