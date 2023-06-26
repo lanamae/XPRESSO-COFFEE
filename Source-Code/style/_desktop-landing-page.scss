@@ -28,6 +28,10 @@
             margin-top: 20px;
         }
 
+        .close{
+            display: none;
+        }
+
         ul{
             display: flex;
             justify-content: space-between; 
@@ -73,7 +77,13 @@
         background-repeat: no-repeat;
         // background-size: auto;
 
+        .logo-hero{
+            display: none;
+        }
 
+        .menu{
+            display: none;
+        }
         
 
         .hero-content{
