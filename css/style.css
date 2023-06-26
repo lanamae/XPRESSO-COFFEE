@@ -115,6 +115,9 @@
   justify-content: center;
   align-items: center;
 }
+.main .about .mob-about {
+  display: none;
+}
 .main .about .about-left img {
   height: 504px;
   width: 495px;
@@ -1188,34 +1191,50 @@
   }
   .main .about {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding: 20px 80px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
     align-items: center;
+    row-gap: 20px;
+  }
+  .main .about .mob-about {
+    display: block;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    color: #A8670E;
+    font-size: 32px;
+    letter-spacing: 7px;
+  }
+  .main .about .about-left {
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
   .main .about .about-left img {
-    height: 504px;
-    width: 495px;
+    height: 305px;
+    width: 305px;
   }
   .main .about .about-right {
+    grid-column: 1/2;
+    grid-row: 3/4;
     display: flex;
-    flex-direction: column;
-    padding-right: 120px;
-    row-gap: 60px;
     justify-content: center;
     align-items: center;
+    padding-right: 0px;
   }
   .main .about .about-right h2 {
     color: #A8670E;
     font-size: 48px;
     letter-spacing: 7px;
+    display: none;
   }
   .main .about .about-right .about-content {
     font-weight: 300;
     font-size: 16px;
     line-height: 30px;
+    text-align: center;
   }
   .main .about .about-right .about-facts {
     display: flex;
