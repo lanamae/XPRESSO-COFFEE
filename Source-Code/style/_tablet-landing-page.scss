@@ -13,7 +13,7 @@
             padding: 50px 25px;
             position: fixed;
             z-index: 10;
-            margin-left: 350px;
+            margin-left: 1000px;
     
             display: flex;
             flex-direction: column;
@@ -21,6 +21,7 @@
             
             
             box-shadow: -3px 4px 6px 3px;
+            transition: all 1s ease-in-;
     
             .logo{
                 cursor: pointer;
@@ -76,6 +77,10 @@
     
         }
     
+
+        .navbar.open{
+            margin-left: 350px;
+        }
     
         .hero{
             width: 100%;
@@ -98,6 +103,7 @@
                 position: absolute;
                 top: 60px;
                 right: 100px;
+                cursor: pointer;
             }
     
             .hero-content{
