@@ -71,12 +71,13 @@
     .hero{
         width: 100%;
         height: calc(100vh - 100px);
-        padding: 20px 120px;
+        padding: 100px 120px;
 
         background-image: url('../Assets/bg1.png');
-        background-position: 450px -260px;
+        background-position: 450px -190px;
         background-repeat: no-repeat;
         // background-size: auto;
+        
 
         .logo-hero{
             display: none;
@@ -684,4 +685,8 @@
 
 
 
+
+.about, .products, .service, .testimonials, .footer{
+    display: none;
+}
 @import './variables-materials';

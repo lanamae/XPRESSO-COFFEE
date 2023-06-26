@@ -4,7 +4,7 @@
     .main{
         width: 100%;
         height: auto;
-        background: red;
+        background: $primaryBg;
     
         .navbar{
             width: 50%;
@@ -87,15 +87,17 @@
             height: 1133px;
             padding: 20px 80px;
     
-            background-image: url('../Assets/bg1.png');
-            background-position: center;
+            background-image: url('../Assets/mob-hero-bg.png');
+            background-position: 20px 20px;
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
-            
-    
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 1fr;
     
             .logo-hero{
+                grid-row: 1/2;
                 display: block;
             }
             .menu{
@@ -107,20 +109,20 @@
             }
     
             .hero-content{
-                display: grid;
-                
-                width: 450px;
-                height: 500px;
-                justify-items: center;
-                align-content: end;
-                position: relative;
+                grid-row: 2/3;
+                grid-column: 1/2;
+                width: auto;
+                height: auto;
                 row-gap: 50px;
-                margin-top: 30px;
+                margin-top: 100px;
 
-                
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
     
                 h1{
-                    font-size: 56px;
+                    width: 500px;
+                    font-size: 64px;
                     font-style: italic;
                     position:absolute;
                     top: 60px;
@@ -143,9 +145,9 @@
                     position: absolute;
                     top: 350px;
                     width: 100px;
-                    margin-bottom: auto;
+                    margin-top: auto;
                     position: absolute;
-                    bottom: 10%;
+                    bottom: 10px;
                     @include primary-btn;
     
                     a{
@@ -704,7 +706,13 @@
            
         }
     
+         .products, .service, .testimonials,.contact-us, .footer{
+            display: none;
+        }
     }
+
+
+    
 }
 
 
