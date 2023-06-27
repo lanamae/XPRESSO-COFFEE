@@ -522,7 +522,7 @@
   .main {
     width: 100%;
     height: auto;
-    background: red;
+    background: #030303;
   }
   .main .navbar {
     width: 50%;
@@ -536,7 +536,7 @@
     flex-direction: column;
     align-items: flex-start;
     box-shadow: -3px 4px 6px 3px;
-    transition: all 1s ease-in-;
+    transition: all 600ms ease;
   }
   .main .navbar .logo {
     cursor: pointer;
@@ -582,13 +582,17 @@
     width: 100%;
     height: 1133px;
     padding: 20px 80px;
-    background-image: url("../Assets/bg1.png");
-    background-position: center;
+    background-image: url("../Assets/mob-hero-bg.png");
+    background-position: 40% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
   }
   .main .hero .logo-hero {
+    grid-row: 1/2;
     display: block;
   }
   .main .hero .menu {
@@ -599,17 +603,19 @@
     cursor: pointer;
   }
   .main .hero .hero-content {
-    display: grid;
-    width: 450px;
-    height: 500px;
-    justify-items: center;
-    align-content: end;
-    position: relative;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: auto;
+    height: auto;
     row-gap: 50px;
-    margin-top: 30px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
   .main .hero .hero-content h1 {
-    font-size: 56px;
+    width: 500px;
+    font-size: 64px;
     font-style: italic;
     position: absolute;
     top: 60px;
@@ -629,9 +635,9 @@
     position: absolute;
     top: 350px;
     width: 100px;
-    margin-bottom: auto;
+    margin-top: auto;
     position: absolute;
-    bottom: 10%;
+    bottom: 10px;
     background-color: #FF8D05;
     color: #E4E2EA;
     border: none;
@@ -1052,6 +1058,9 @@
     gap: 10px;
     font-weight: 200;
   }
+  .main .about, .main .products, .main .service, .main .testimonials, .main .contact-us, .main .footer {
+    display: none;
+  }
 }
 @media (max-width: 768px) and (min-width: 575px) {
   .main {
@@ -1071,7 +1080,7 @@
     flex-direction: column;
     align-items: flex-start;
     box-shadow: -3px 4px 6px 3px;
-    transition: all 1s ease-in-;
+    transition: all 600ms ease;
   }
   .main .navbar .logo {
     cursor: pointer;
@@ -1118,7 +1127,7 @@
     height: 1133px;
     padding: 20px 80px;
     background-image: url("../Assets/mob-hero-bg.png");
-    background-position: 20px 20px;
+    background-position: -10% 3%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
