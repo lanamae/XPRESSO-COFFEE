@@ -55,7 +55,7 @@
   height: calc(100vh - 100px);
   padding: 100px 120px;
   background-image: url("../Assets/bg1.png");
-  background-position: 450px -190px;
+  background-position: 100% 60%;
   background-repeat: no-repeat;
 }
 .main .hero .logo-hero {
