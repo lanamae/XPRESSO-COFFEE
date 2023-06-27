@@ -656,34 +656,50 @@
   }
   .main .about {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding: 20px 80px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
     align-items: center;
+    row-gap: 20px;
+  }
+  .main .about .mob-about {
+    display: block;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    color: #A8670E;
+    font-size: 32px;
+    letter-spacing: 7px;
+  }
+  .main .about .about-left {
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
   .main .about .about-left img {
-    height: 504px;
-    width: 495px;
+    height: 305px;
+    width: 305px;
   }
   .main .about .about-right {
+    grid-column: 1/2;
+    grid-row: 3/4;
     display: flex;
-    flex-direction: column;
-    padding-right: 120px;
-    row-gap: 60px;
     justify-content: center;
     align-items: center;
+    padding-right: 0px;
   }
   .main .about .about-right h2 {
     color: #A8670E;
     font-size: 48px;
     letter-spacing: 7px;
+    display: none;
   }
   .main .about .about-right .about-content {
     font-weight: 300;
     font-size: 16px;
     line-height: 30px;
+    text-align: center;
   }
   .main .about .about-right .about-facts {
     display: flex;
@@ -720,7 +736,7 @@
   }
   .main .products {
     width: 100%;
-    height: 100vh;
+    height: auto;
     padding: 40px 120px;
     display: flex;
     flex-direction: column;
@@ -730,16 +746,18 @@
   .main .products .products-headline {
     font-size: 48px;
     color: #A8670E;
+    text-align: center;
   }
   .main .products .product-items {
-    display: flex;
-    row-gap: 60px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
   }
   .main .products .product-items .product-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 20px;
   }
   .main .products .product-items .product-card .product-name {
     color: #A8670E;
@@ -1058,7 +1076,7 @@
     gap: 10px;
     font-weight: 200;
   }
-  .main .about, .main .products, .main .service, .main .testimonials, .main .contact-us, .main .footer {
+  .main .service, .main .testimonials, .main .contact-us, .main .footer {
     display: none;
   }
 }
@@ -1214,7 +1232,7 @@
     grid-column: 1/2;
     grid-row: 1/2;
     color: #A8670E;
-    font-size: 32px;
+    font-size: 48px;
     letter-spacing: 7px;
   }
   .main .about .about-left {
@@ -1280,7 +1298,7 @@
   }
   .main .products {
     width: 100%;
-    height: 100vh;
+    height: auto;
     padding: 40px 120px;
     display: flex;
     flex-direction: column;
@@ -1290,16 +1308,18 @@
   .main .products .products-headline {
     font-size: 48px;
     color: #A8670E;
+    text-align: center;
   }
   .main .products .product-items {
-    display: flex;
-    row-gap: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 60px;
   }
   .main .products .product-items .product-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 20px;
   }
   .main .products .product-items .product-card .product-name {
     color: #A8670E;
@@ -1618,7 +1638,7 @@
     gap: 10px;
     font-weight: 200;
   }
-  .main .products, .main .service, .main .testimonials, .main .contact-us, .main .footer {
+  .main .service, .main .testimonials, .main .contact-us, .main .footer {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */
