@@ -684,7 +684,9 @@
   .main .about .about-right {
     grid-column: 1/2;
     grid-row: 3/4;
-    display: flex;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
     justify-content: center;
     align-items: center;
     padding-right: 0px;
@@ -703,10 +705,12 @@
   }
   .main .about .about-right .about-facts {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 20px;
     align-items: center;
-    width: 100%;
+    flex-wrap: wrap;
+    min-width: 200px;
+    gap: 20px;
   }
   .main .about .about-right .about-facts .fact {
     display: flex;
@@ -734,43 +738,36 @@
     font-weight: 300;
     font-size: 14px;
   }
-  .main .products {
+  .main #products {
     width: 100%;
     height: auto;
-    padding: 40px 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 50px;
   }
-  .main .products .products-headline {
+  .main #products .products-headline {
     font-size: 48px;
     color: #A8670E;
     text-align: center;
   }
-  .main .products .product-items {
+  .main #products .product-items {
+    height: 100%;
+    width: 200%;
     display: grid;
-    grid-template-rows: 1fr;
     grid-template-columns: repeat(4, 1fr);
-    gap: 60px;
+    gap: 30px;
+    pointer-events: none;
+    transition: 0s ease-in;
   }
-  .main .products .product-items .product-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .main .products .product-items .product-card .product-name {
+  .main #products .product-items .product-card .product-name {
     color: #A8670E;
     font-size: 28px;
     font-weight: 700;
   }
-  .main .products .product-items .product-card .product-info {
+  .main #products .product-items .product-card .product-info {
     padding: 0px 50px;
     text-align: center;
     font-size: 16px;
     font-weight: 300;
   }
-  .main .products .product-items .product-card .view-store {
+  .main #products .product-items .product-card .view-store {
     background-color: #FF8D05;
     color: #E4E2EA;
     border: none;
@@ -786,10 +783,10 @@
     width: 200px;
     height: 54px;
   }
-  .main .products .product-items .product-card .view-store:hover {
+  .main #products .product-items .product-card .view-store:hover {
     background-color: #A8670E;
   }
-  .main .products .product-items .product-card .view-store a {
+  .main #products .product-items .product-card .view-store a {
     text-decoration: none;
   }
   .main .service {
@@ -1232,8 +1229,9 @@
     grid-column: 1/2;
     grid-row: 1/2;
     color: #A8670E;
-    font-size: 48px;
+    font-size: 40px;
     letter-spacing: 7px;
+    text-align: center;
   }
   .main .about .about-left {
     grid-column: 1/2;
@@ -1306,7 +1304,7 @@
     row-gap: 50px;
   }
   .main .products .products-headline {
-    font-size: 48px;
+    font-size: 40px;
     color: #A8670E;
     text-align: center;
   }
@@ -1366,47 +1364,47 @@
   .main .service .service-title {
     color: #A8670E;
     font-size: 48px;
+    text-align: center;
   }
   .main .service .service-gallery {
     display: grid;
-    grid-template-columns: 1fr 396px 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
   }
   .main .service .service-gallery :nth-child(1) {
     grid-column: 1/2;
-    grid-row: 1/3;
+    grid-row: 2/3;
     width: 100%;
     height: 100%;
   }
   .main .service .service-gallery :nth-child(2) {
     grid-column: 1/2;
-    grid-row: 3/5;
+    grid-row: 3/4;
     width: 100%;
     height: 100%;
   }
   .main .service .service-gallery :nth-child(3) {
-    grid-column: 2/3;
+    grid-column: 1/2;
     grid-row: 1/2;
     text-align: center;
     font-weight: 200;
-    padding: 30px 40px;
   }
   .main .service .service-gallery :nth-child(4) {
-    grid-column: 2/3;
-    grid-row: 2/5;
+    grid-column: 1/2;
+    grid-row: 4/5;
     width: 100%;
     height: 100%;
   }
   .main .service .service-gallery :nth-child(5) {
-    grid-column: 3/4;
-    grid-row: 1/3;
+    grid-column: 1/2;
+    grid-row: 5/6;
     width: 100%;
     height: 100%;
   }
   .main .service .service-gallery :nth-child(6) {
-    grid-column: 3/4;
-    grid-row: 3/5;
+    grid-column: 1/2;
+    grid-row: 6/7;
     width: 100%;
     height: 100%;
   }
@@ -1638,7 +1636,7 @@
     gap: 10px;
     font-weight: 200;
   }
-  .main .service, .main .testimonials, .main .contact-us, .main .footer {
+  .main .testimonials, .main .contact-us, .main .footer {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */

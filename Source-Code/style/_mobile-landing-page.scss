@@ -1,4 +1,7 @@
 
+// @import "https://unpkg.com/open-props";
+// @import "https://unpkg.com/open-props/normalize.min.css";
+
 @media (max-width: 576px){
     
     .main{
@@ -206,7 +209,9 @@
                 grid-column: 1/2;
                 grid-row: 3/4;
 
-                display: flex;
+                display: grid;
+                grid-auto-flow: row;
+                grid-auto-columns: auto;
                 justify-content: center;
                 align-items: center;
                 padding-right: 0px;
@@ -228,10 +233,12 @@
     
                 .about-facts{
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: center;
                     margin: 20px;
                     align-items: center;
-                    width: 100%;
+                    flex-wrap: wrap;
+                    min-width: 200px;
+                    gap: 20px;  
     
                     .fact{
                         display:flex;
@@ -239,6 +246,7 @@
                         justify-items: center;
                         align-items: center;
                         text-align: center;
+                        
                         
                         .about-icons{
                             width: 72px;
@@ -275,18 +283,25 @@
     
         }
     
-        .products{
+        #products{
             width: 100%;
             height: auto;
-            padding: 40px 120px;
+            // padding: 40px 120px;
             
             // display: grid;
-            // grid-template-columns: 1fr;
+            // grid-template-columns: auto;
             // grid-template-rows: 100px 1fr;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            row-gap: 50px;
+            // display: flex;
+            // // flex-direction: column;
+            // // align-items: center;
+            // row-gap: 50px;
+
+            // position: absolute;
+            // left: 10%;
+            // top: 30%;
+            // width: 80%;
+            // height: 200px;
+            // overflow: hidden;
             
     
             .products-headline{
@@ -298,17 +313,36 @@
     
     
             .product-items{
+                // display: grid;
+                // grid-auto-flow: column;
+                // grid-auto-columns: 20%;
+                // gap: 30px;
+                // overflow-x: auto;
+
+
+                // position: absolute;
+                // top: 0;
+                // left: 0;
+                height: 100%;
+                width: 200%;
                 display: grid;
-                grid-template-rows: 1fr;
                 grid-template-columns: repeat(4, 1fr);
-                gap: 60px;
-    
+                gap: 30px;
+                pointer-events: none;
+                transition: 0s ease-in;
+
+                // overflow-x: scroll;
+
+
                 .product-card{
-                    display:flex;
-                    flex-direction: column;
-                    align-items: center;
+                    // display:flex;
+                    // flex-direction: column;
                     
-    
+                    // height: 100%;
+                    // background: #000;
+                    // text-align: center;
+                    // // padding: 3rem;
+
                     .product-name{
                         color: $secondaryColor;
                         font-size: 28px;
@@ -727,7 +761,7 @@
            
         }
 
-        .products, .service, .testimonials,.contact-us, .footer{
+         .service, .testimonials,.contact-us, .footer{
             display: none;
         }
     

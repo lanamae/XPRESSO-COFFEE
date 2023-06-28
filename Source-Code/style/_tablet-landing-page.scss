@@ -170,6 +170,7 @@
     
             // layout
             display:grid;
+
             grid-template-columns: 1fr;
             grid-template-rows: repeat(3, auto);
             justify-items: center;
@@ -183,8 +184,9 @@
                 grid-row: 1/2;
 
                 color: $secondaryColor;
-                font-size: 48px;
+                font-size: 40px;
                 letter-spacing: 7px;
+                text-align: center;
                 
             }
 
@@ -290,7 +292,7 @@
             
     
             .products-headline{
-                font-size:48px;
+                font-size:40px;
                 color: $secondaryColor;
                 text-align: center;
               
@@ -357,18 +359,19 @@
             .service-title{
                 color: $secondaryColor;
                 font-size: 48px;
+                text-align: center;
             }
     
     
             .service-gallery{
                 display: grid;
-                grid-template-columns: 1fr 396px 1fr;
-                grid-template-rows: 1fr 1fr 1fr 1fr;
-                gap: 20px;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
+                gap: 30px;
     
                 :nth-child(1){
                     grid-column: 1/2;
-                    grid-row: 1/3;
+                    grid-row: 2/3;
                     width: 100%;
                     height: 100%;
     
@@ -376,22 +379,22 @@
     
                 :nth-child(2){
                     grid-column: 1/2;
-                    grid-row: 3/5;
+                    grid-row: 3/4;
                     width: 100%;
                     height: 100%;
                 }
     
                 :nth-child(3){
-                    grid-column: 2/3;
+                    grid-column: 1/2;
                     grid-row: 1/2;
                     text-align: center;
                     font-weight: 200;
-                    padding: 30px 40px;
+                    // padding: 30px 40px;
                 }
     
                 :nth-child(4){
-                    grid-column: 2/3;
-                    grid-row: 2/5;
+                    grid-column: 1/2;
+                    grid-row: 4/5;
                     width: 100%;
                     height: 100%;
                     
@@ -399,15 +402,15 @@
                 }
     
                 :nth-child(5){
-                    grid-column: 3/4;
-                    grid-row: 1/3;
+                    grid-column: 1/2;
+                    grid-row: 5/6;
                     width: 100%;
                     height: 100%;
                 }
     
                 :nth-child(6){
-                    grid-column: 3/4;
-                    grid-row: 3/5;
+                    grid-column: 1/2;
+                    grid-row: 6/7;
                     width: 100%;
                     height: 100%;
                 }
@@ -727,7 +730,7 @@
            
         }
     
-         .service, .testimonials,.contact-us, .footer{
+         .testimonials,.contact-us, .footer{
             display: none;
         }
     }
