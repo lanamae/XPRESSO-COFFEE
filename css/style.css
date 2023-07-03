@@ -607,7 +607,7 @@
     align-items: flex-start;
   }
   .main .hero .hero-content h1 {
-    width: 500px;
+    max-width: 200px;
     font-size: 64px;
     font-style: italic;
     position: absolute;
@@ -659,6 +659,7 @@
   }
   .main .about .mob-about {
     display: block;
+    text-align: center;
     grid-column: 1/2;
     grid-row: 1/2;
     color: #A8670E;
@@ -752,6 +753,7 @@
     height: 500px;
   }
   .main #products .slider .product-items {
+    gap: 30px;
     position: absolute;
     top: 0;
     left: 0;

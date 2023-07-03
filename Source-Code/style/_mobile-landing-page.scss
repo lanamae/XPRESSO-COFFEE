@@ -124,7 +124,7 @@
                 align-items: flex-start;
     
                 h1{
-                    width: 500px;
+                    max-width: 200px;
                     font-size: 64px;
                     font-style: italic;
                     position:absolute;
@@ -181,7 +181,7 @@
     
             .mob-about{
                 display: block;
-
+                text-align: center;
                 grid-column: 1/2;
                 grid-row: 1/2;
 
@@ -322,7 +322,7 @@
                     // display: grid;
                     // grid-auto-flow: column;
                     // grid-auto-columns: 20%;
-                    // gap: 30px;
+                    gap: 30px;
                     // overflow-x: auto;
     
     

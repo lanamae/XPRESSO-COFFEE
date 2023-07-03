@@ -44,17 +44,15 @@ slider.addEventListener('mousemove', (e) =>{
     checkBoundary()
 })
 
-function checkBoundary (){
-    let outer = slider.getBoundingClientRect()
-    let inner = slider.getBoundingClientRect()
+// function checkBoundary (){
+//     let outer = slider.getBoundingClientRect()
+//     let inner = slider.getBoundingClientRect()
 
-    if(parseInt(productItems.style.left)>0){
-        productItems.style.left = '0px';
-    }
+//     if(parseInt(productItems.style.left)>0){
+//         productItems.style.left = '0px';
+//     }
 
-    else if(inner.right<outer.right){
-        productItems.stryle.left = `-${inner.width-outer.width}px`
-    }
-}
-
-checkBoundary
+//     else if(inner.right<outer.right){
+//         productItems.strle.left = `-${inner.width-outer.width}px`
+//     }
+// }
