@@ -94,10 +94,9 @@
   color: #E4E2EA;
   border: none;
   font-size: 18px;
-  border-radius: 20px;
-  padding: 15px 45px;
-  width: 242px;
-  height: 64px;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
   cursor: pointer;
 }
 .main .hero .hero-content .cta:hover {
@@ -212,16 +211,10 @@
   color: #E4E2EA;
   border: none;
   font-size: 18px;
-  border-radius: 20px;
-  padding: 15px 45px;
-  width: 242px;
-  height: 64px;
-  cursor: pointer;
-  font-size: 18px;
-  border-radius: 15px;
-  padding: 15px 45px;
+  border-radius: 10px;
   width: 200px;
-  height: 54px;
+  height: 50px;
+  cursor: pointer;
 }
 .main .products .product-items .product-card .view-store:hover {
   background-color: #A8670E;
@@ -444,19 +437,18 @@
   border: none;
   border-bottom: solid 2px #FF8D05;
   padding: 5px 10px;
+  resize: none;
 }
 .main .contact-us .contact-form .form-container form .send {
   background-color: #FF8D05;
   color: #E4E2EA;
   border: none;
   font-size: 18px;
-  border-radius: 20px;
-  padding: 15px 45px;
-  width: 242px;
-  height: 64px;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
   cursor: pointer;
-  height: 60px;
-  width: 100%;
+  margin-left: auto;
 }
 .main .contact-us .contact-form .form-container form .send:hover {
   background-color: #A8670E;
@@ -520,7 +512,7 @@
 
 @media (max-width: 576px) {
   .main {
-    width: 100%;
+    width: 100vw;
     height: auto;
     background: #030303;
   }
@@ -642,10 +634,9 @@
     color: #E4E2EA;
     border: none;
     font-size: 18px;
-    border-radius: 20px;
-    padding: 15px 45px;
-    width: 242px;
-    height: 64px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
     cursor: pointer;
   }
   .main .hero .hero-content .cta:hover {
@@ -737,6 +728,77 @@
   .main .about .about-right .about-facts .fact .text {
     font-weight: 300;
     font-size: 14px;
+  }
+  .main #products {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+  }
+  .main #products .products-headline {
+    font-size: 48px;
+    color: #A8670E;
+    text-align: center;
+  }
+  .main #products .slider {
+    position: absolute;
+    left: 10%;
+    top: 2500px;
+    width: 1200px;
+    height: 600px;
+    overflow: hidden;
+  }
+  .main #products .slider .product-items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    place-items: center;
+    pointer-events: none;
+    transition: 0s ease-in;
+  }
+  .main #products .slider .product-items .product-card {
+    height: 100%;
+    background: #000;
+    text-align: center;
+  }
+  .main #products .slider .product-items .product-card .product-name {
+    color: #A8670E;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .main #products .slider .product-items .product-card .product-info {
+    padding: 0px 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .main #products .slider .product-items .product-card .view-store {
+    background-color: #FF8D05;
+    color: #E4E2EA;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 15px;
+    padding: 15px 45px;
+    width: 200px;
+    height: 54px;
+  }
+  .main #products .slider .product-items .product-card .view-store:hover {
+    background-color: #A8670E;
+  }
+  .main #products .slider .product-items .product-card .view-store a {
+    text-decoration: none;
   }
   .main .service {
     width: 100%;
@@ -959,10 +1021,9 @@
     color: #E4E2EA;
     border: none;
     font-size: 18px;
-    border-radius: 20px;
-    padding: 15px 45px;
-    width: 242px;
-    height: 64px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
     cursor: pointer;
     height: 60px;
     width: 100%;
@@ -1150,10 +1211,9 @@
     color: #E4E2EA;
     border: none;
     font-size: 18px;
-    border-radius: 20px;
-    padding: 15px 45px;
-    width: 242px;
-    height: 64px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
     cursor: pointer;
   }
   .main .hero .hero-content .cta:hover {
@@ -1284,10 +1344,9 @@
     color: #E4E2EA;
     border: none;
     font-size: 18px;
-    border-radius: 20px;
-    padding: 15px 45px;
-    width: 242px;
-    height: 64px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
     cursor: pointer;
     font-size: 18px;
     border-radius: 15px;
@@ -1522,10 +1581,9 @@
     color: #E4E2EA;
     border: none;
     font-size: 18px;
-    border-radius: 20px;
-    padding: 15px 45px;
-    width: 242px;
-    height: 64px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
     cursor: pointer;
     height: 60px;
     width: 100%;

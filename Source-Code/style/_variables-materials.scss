@@ -11,10 +11,10 @@ $primaryfont: 'Work Sans', sans-serif;
     color: $fontColor;
     border: none;
     font-size: 18px;
-    border-radius: 20px;
-    padding: 15px 45px;
-    width: 242px;
-    height: 64px;
+    border-radius: 10px;
+    // padding: 15px 45px;
+    width:200px;
+    height: 50px;
     cursor: pointer;
 
     &:hover{

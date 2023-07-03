@@ -3,9 +3,9 @@
 // @import "https://unpkg.com/open-props/normalize.min.css";
 
 @media (max-width: 576px){
-    
+   
     .main{
-        width: 100%;
+        width: 100vw;
         height: auto;
         background: $primaryBg;
     
@@ -283,107 +283,111 @@
     
         }
     
-        // #products{
-        //     width: auto;
-        //     height: auto;
-        //     // padding: 40px 120px;
+        #products{
+            width: auto;
+            height: 100vh;
+            // padding: 40px 120px;
             
-        //     // display: grid;
-        //     // grid-template-columns: auto;
-        //     // grid-template-rows: 100px 1fr;
-        //     display: flex;
-        //     flex-direction: column;
-        //     align-items: center;
-        //     row-gap: 50px;
+            // display: grid;
+            // grid-template-columns: auto;
+            // grid-template-rows: 100px 1fr;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 50px;
+
+            // position: relative;
 
            
             
     
-        //     .products-headline{
-        //         font-size:48px;
-        //         color: $secondaryColor;
-        //         text-align: center;
+            .products-headline{
+                font-size:48px;
+                color: $secondaryColor;
+                text-align: center;
               
-        //     }
+            }
 
-        //     .slider{
-        //         // position: absolute;
-        //         // left: 10%;
-        //         // top: 30%;
-        //         width: 140%;
-        //         height: auto;
-        //         overflow: hidden;
+            .slider{
+                position: absolute;
+                left: 10%;
+                top: 2500px;
+                width: 1200px;
+                height: 600px;
+                overflow: hidden;
 
 
-        //         .product-items{
-        //             // display: grid;
-        //             // grid-auto-flow: column;
-        //             // grid-auto-columns: 20%;
-        //             // gap: 30px;
-        //             // overflow-x: auto;
+                .product-items{
+                    // display: grid;
+                    // grid-auto-flow: column;
+                    // grid-auto-columns: 20%;
+                    // gap: 30px;
+                    // overflow-x: auto;
     
     
-        //             // position: absolute;
-        //             // top: 0;
-        //             // left: 0;
-        //             height: 100vh;
-        //             width: 200%;
-        //             // padding: 20px;
-        //             // display: grid;
-        //             // grid-template-columns: repeat(4, 1fr);
-        //             gap: 30px;
-        //             // pointer-events: none;
-        //             // transition: 0s ease-in;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100vh;
+                    width: 100%;
+                    // padding: 20px;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    // gap: 30px;
+                    justify-content: center;
+                    place-items: center;
+                    pointer-events: none;
+                    transition: 0s ease-in;
     
-        //             // overflow-x: scroll;
+                    // overflow-x: scroll;
     
     
-        //             .product-card{
-        //                 // display:flex;
-        //                 // flex-direction: column;
+                    .product-card{
+                        // display:flex;
+                        // flex-direction: column;
                         
-        //                 // height: 100%;
-        //                 // background: #000;
-        //                 // text-align: center;
-        //                 // // padding: 3rem;
+                        height: 100%;
+                        background: #000;
+                        text-align: center;
+                        // padding: 3rem;
     
-        //                 .product-name{
-        //                     color: $secondaryColor;
-        //                     font-size: 28px;
-        //                     font-weight: 700;
+                        .product-name{
+                            color: $secondaryColor;
+                            font-size: 28px;
+                            font-weight: 700;
         
-        //                 }
+                        }
         
-        //                 .product-info{
-        //                     padding: 0px 50px;
-        //                     text-align: center;
-        //                     font-size: 16px;
-        //                     font-weight: 300;
-        //                 }
+                        .product-info{
+                            padding: 0px 50px;
+                            text-align: center;
+                            font-size: 16px;
+                            font-weight: 300;
+                        }
         
-        //                 .view-store{
-        //                     @include primary-btn;
+                        .view-store{
+                            @include primary-btn;
                 
-        //                     font-size: 18px;
-        //                     border-radius: 15px;
-        //                     padding: 15px 45px;
-        //                     width: 200px;
-        //                     height: 54px;
+                            font-size: 18px;
+                            border-radius: 15px;
+                            padding: 15px 45px;
+                            width: 200px;
+                            height: 54px;
         
-        //                     a{
-        //                         text-decoration: none;
-        //                     }
+                            a{
+                                text-decoration: none;
+                            }
                             
-        //                 }
-        //             }
-        //         }
-        //     }
+                        }
+                    }
+                }
+            }
     
     
             
     
     
-        // }
+        }
     
         .service{
             width: 100%;
