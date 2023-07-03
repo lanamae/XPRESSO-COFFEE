@@ -45,8 +45,8 @@ slider.addEventListener('mousemove', (e) =>{
 })
 
 function checkBoundary (){
-    let outer = slider.getBoundingCXlientRect()
-    let inner = slider.getBoundingCXlientRect()
+    let outer = slider.getBoundingClientRect()
+    let inner = slider.getBoundingClientRect()
 
     if(parseInt(productItems.style.left)>0){
         productItems.style.left = '0px';

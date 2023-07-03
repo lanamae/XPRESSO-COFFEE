@@ -296,7 +296,7 @@
             align-items: center;
             row-gap: 50px;
 
-            // position: relative;
+            position: relative;
             
 
            
@@ -312,10 +312,10 @@
             .slider{
                 position: absolute;
                 left: 10%;
-                top: 2500px;
-                width: 1200px;
+                top:  30%;
+                width: 600px;
                 height: 500px;
-                overflow: hidden;
+                // overflow: hidden;
 
 
                 .product-items{
