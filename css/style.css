@@ -592,12 +592,15 @@
   }
   .main .hero .navigation .logo-hero {
     display: block;
+    position: absolute;
+    top: 30px;
+    left: 30px;
   }
   .main .hero .navigation .menu {
     display: block;
     position: absolute;
     top: 60px;
-    right: 20px;
+    right: 30px;
     cursor: pointer;
   }
   .main .hero .hero-content {
@@ -615,7 +618,7 @@
   .main .hero .hero-content h1 {
     grid-column: 1/2;
     grid-row: 1/2;
-    font-size: 48px;
+    font-size: 44px;
     font-style: italic;
     position: absolute;
     top: 30px;
