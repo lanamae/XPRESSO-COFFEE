@@ -515,6 +515,7 @@
     width: 100vw;
     height: auto;
     background: #030303;
+    overflow-x: hidden;
   }
   .main .navbar {
     width: 50%;
@@ -731,7 +732,7 @@
   }
   .main #products {
     width: auto;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -747,7 +748,7 @@
     left: 10%;
     top: 2500px;
     width: 1200px;
-    height: 600px;
+    height: 500px;
     overflow: hidden;
   }
   .main #products .slider .product-items {

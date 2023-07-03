@@ -11,7 +11,7 @@ slider.addEventListener('mousedown', (e) =>{
     pressed = true
     startx = e.offsetX - productItems.offsetLeft
     slider.style.cursor = 'grabbing'
-    console.log(productItems.offsetLeft)
+    // console.log(productItems.offsetLeft)
 })
 
 slider.addEventListener('mouseenter', () =>{
@@ -40,6 +40,8 @@ slider.addEventListener('mousemove', (e) =>{
 
 
     productItems.style.left=`${x - startx}px`
+
+    checkBoundary()
 })
 
 function checkBoundary (){
